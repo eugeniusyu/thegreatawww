@@ -1,0 +1,48 @@
+/* Parallex effect */
+
+[class*='bg__'] {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  &:nth-child(2n) {
+    box-shadow: inset 0 0 1em #111;
+  }
+}
+
+.bg__space {
+  min-height: 350px;
+  background-image: url("./hero-bg.jpg");
+}
+.bg__space_short {
+  min-height: 200px;
+  background-image: url("./hero-bg.jpg");
+}
+
+.bg__masthead {
+  background-image: url("./hero-bg.jpg");
+}
+
+.counterContainer {
+  text-align: center;
+  margin: 20px;
+}
+
+.textContainer {
+  height: 300px;
+  line-height: 150px;
+  p {
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+
+@media(max-width:768px) {
+  .textContainer {
+    height: 150px;
+    line-height: 100px;
+    p {
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+}

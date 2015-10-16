@@ -1,0 +1,123 @@
+$darkPrimary: #C2185B;
+$primary: #E91E63;
+$lightPrimary: #F8BBD0;
+$text: #FFFFFF;
+$accent: #FF5252;
+$primaryText: #212121;
+$secondaryText: #727272;
+$divider: #B6B6B6;
+
+.home {
+  dd {
+    margin-bottom: 15px;
+  }
+
+  @keyframes hue {
+    0%, 100%  {color:#e74c3c;}
+    25%  {color:#f1c40f;}
+    50%  {color:#3498db;}
+    75%  {color:#2ecc71;}
+  }
+
+  @-moz-keyframes hue {
+    0%, 100%  {color:#e74c3c;}
+    25%  {color:#f1c40f;}
+    50%  {color:#3498db;}
+    75%  {color:#2ecc71;}
+  }
+
+  @-webkit-keyframes hue {
+    0%, 100%  {color:#e74c3c;}
+    25%  {color:#f1c40f;}
+    50%  {color:#3498db;}
+    75%  {color:#2ecc71;}
+  }
+
+  @-o-keyframes hue {
+    0%, 100%  {color:#e74c3c;}
+    25%  {color:#f1c40f;}
+    50%  {color:#3498db;}
+    75%  {color:#2ecc71;}
+  }
+}
+.masthead {
+  background-color: rgba(255,255,255,0.8);
+
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+  h1 {
+    color: $primary;
+    font-size: 4em;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 0;
+    background-color: rgba(255,255,255, 0.8);
+
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip:text;
+    -webkit-animation:hue 10s infinite linear;
+    transform: translateZ(0);
+  }
+  h2 {
+    color: #ddd;
+    font-size: 2em;
+    margin: 20px;
+  }
+  a {
+    color: #ddd;
+  }
+  p {
+    margin: 10px;
+    color: #f35626;
+  }
+  .humility {
+    color: $secondaryText;
+    a {
+      color: $secondaryText;
+    }
+  }
+  .github {
+    font-size: 1.5em;
+  }
+  .headerWrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.app {
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+/* Parallex effect */
+
+[class*='bg__'] {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  &:nth-child(2n) {
+    box-shadow: inset 0 0 1em #111;
+  }
+}
+
+.bg__space {
+  min-height: 350px;
+  background-image: url("./hero-bg.jpg");
+}
+.bg__space_short {
+  min-height: 200px;
+  background-image: url("./hero-bg.jpg");
+}
+
+.bg__masthead {
+  background-image: url("./hero-bg.jpg");
+}
+
+.counterContainer {
+  text-align: center;
+  margin: 20px;
+}

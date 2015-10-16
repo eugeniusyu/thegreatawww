@@ -1,0 +1,88 @@
+$darkPrimary: #C2185B;
+$primary: #E91E63;
+$lightPrimary: #F8BBD0;
+$text: #FFFFFF;
+$accent: #FF5252;
+$primaryText: #212121;
+$secondaryText: #727272;
+$divider: #B6B6B6;
+
+
+
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  h1, h2, h3, h4 {
+    font-family: "Cabin";
+  }
+  h1 {
+    padding: 50px 0;
+  }
+  h2 {
+    padding: 30px 0;
+  }
+}
+.app {
+  :global(.navbar-brand) {
+    position:relative;
+    padding-left: 50px;
+  }
+  :global(.navbar-fixed-top .nav) {
+    padding: 15px 0;
+  }
+  :global(.navbar-fixed-top .navbar-brand) {
+    padding: 0 15px;
+  }
+  .brand {
+    img {
+      $size: 60px;
+      width: $size;
+      height: $size;
+    }
+  }
+  nav :global(.fa) {
+    font-size: 2em;
+    line-height: 20px;
+  }
+  nav[role="navigation"] {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0;
+  }
+  .navLinks {
+    li > a {
+      color: black;
+    }
+    li > a:hover {
+      color: red;
+    }
+  }
+
+}
+.appContent {
+  margin-top: 60px; // for fixed navbar
+  text-align: center;
+}
+
+.appFooter {
+  font-family: "Montserrat";
+  font-weight: 300;
+  background: #FFFFFF;
+  border-radius: 0;
+  margin-bottom: 0;
+  color: #000000;
+  border: 0;
+}
+
+@media(min-width:768px) {
+  .appContent {
+    margin-top: 80px; // for fixed navbar
+  }
+
+  .navbar-fixed-top .navbar-brand {
+    padding: 15px 0;
+  }
+    .brand {
+      margin-top: 10px;
+    }
+}
